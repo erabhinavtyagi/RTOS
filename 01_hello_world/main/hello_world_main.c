@@ -1,13 +1,12 @@
 /*
- * SPDX-FileCopyrightText: 2010-2022 Espressif Systems (Shanghai) CO LTD
- *
- * SPDX-License-Identifier: CC0-1.0
+ * Program - Hello World
+ * STEPS 
+ * 1. . ~/esp/esp-idf/export.sh
+ * 2. idf.py menuconfig - go to component setting and change according to our requirement and save it, then quit.
+ * 3.idf.py build
+ * 4.idf.py flash
+ * 5.idf.py monitor 
  */
- /*1. . ~/esp/esp-idf/export.sh
-   2. idf.py menuconfig - go to component setting and change according to our requirement and save it, then quit.
-   3.idf.py build
-   4.idf.py flash
-   5.idf.py monitor */
 
 #include <stdio.h>
 #include "sdkconfig.h"

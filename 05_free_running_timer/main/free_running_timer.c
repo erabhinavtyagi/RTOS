@@ -1,13 +1,11 @@
 /*
- * SPDX-FileCopyrightText: 2010-2022 Espressif Systems (Shanghai) CO LTD
+ * To Check Functionality of Free-Running Timer. 
  *
- * SPDX-License-Identifier: CC0-1.0
+ * 1. . ~/esp/esp-idf/export.sh
+ * 2. idf.py menuconfig - go to component setting and change according to our requirement and save it, then quit.
+ * 3. idf.py build && idf.py flash && idf.py monitor
+ * Press "ctrl+]" to stop the monitoring mode.
  */
- /*1. . ~/esp/esp-idf/export.sh
-   2. idf.py menuconfig - go to component setting and change according to our requirement and save it, then quit.
-   3.idf.py build
-   4.idf.py flash
-   5.idf.py monitor */
 
 #include <stdio.h>
 #include "freertos/FreeRTOS.h"
