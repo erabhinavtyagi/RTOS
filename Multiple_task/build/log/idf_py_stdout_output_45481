@@ -1,0 +1,5 @@
+[1/4] cd /home/cdac/esp/esp-idf/examples/get-started/Multiple_task/build/esp-idf/esptool_py && /home/cdac/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/cdac/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/cdac/esp/esp-idf/examples/get-started/Multiple_task/build/partition_table/partition-table.bin /home/cdac/esp/esp-idf/examples/get-started/Multiple_task/build/Assign.bin
+Assign.bin binary size 0x2ad80 bytes. Smallest app partition is 0x100000 bytes. 0xd5280 bytes (83%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cd /home/cdac/esp/esp-idf/examples/get-started/Multiple_task/build/bootloader/esp-idf/esptool_py && /home/cdac/.espressif/python_env/idf5.0_py3.10_env/bin/python /home/cdac/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/cdac/esp/esp-idf/examples/get-started/Multiple_task/build/bootloader/bootloader.bin
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
