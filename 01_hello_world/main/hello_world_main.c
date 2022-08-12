@@ -1,6 +1,6 @@
 /*
  * Program - Hello World
- * STEPS 
+ * STEPS for Compilation.
  * 1. . ~/esp/esp-idf/export.sh
  * 2. idf.py menuconfig - go to component setting and change according to our requirement and save it, then quit.
  * 3.idf.py build
