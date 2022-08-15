@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles/bootloader
-/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles/bootloader.rule
-/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles/bootloader-complete.rule
-/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/abhinav/cdac/RTOS/01_hello_world/build/CMakeFiles/bootloader
+/home/abhinav/cdac/RTOS/01_hello_world/build/CMakeFiles/bootloader.rule
+/home/abhinav/cdac/RTOS/01_hello_world/build/CMakeFiles/bootloader-complete.rule
+/home/abhinav/cdac/RTOS/01_hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/abhinav/cdac/RTOS/01_hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/abhinav/cdac/RTOS/01_hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/abhinav/cdac/RTOS/01_hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/abhinav/cdac/RTOS/01_hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/abhinav/cdac/RTOS/01_hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/abhinav/cdac/RTOS/01_hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule

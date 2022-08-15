@@ -313,6 +313,36 @@
         "children": [],
         "depends_on": null,
         "help": null,
+        "id": "SOC_XTAL_SUPPORT_26M",
+        "name": "SOC_XTAL_SUPPORT_26M",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_XTAL_SUPPORT_40M",
+        "name": "SOC_XTAL_SUPPORT_40M",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_XTAL_SUPPORT_AUTO_DETECT",
+        "name": "SOC_XTAL_SUPPORT_AUTO_DETECT",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
         "id": "SOC_ADC_RTC_CTRL_SUPPORTED",
         "name": "SOC_ADC_RTC_CTRL_SUPPORTED",
         "range": null,
@@ -12083,56 +12113,6 @@
                         "children": [
                             {
                                 "children": [],
-                                "depends_on": "<choice ESP32_XTAL_FREQ_SEL>",
-                                "help": null,
-                                "id": "ESP32_XTAL_FREQ_40",
-                                "name": "ESP32_XTAL_FREQ_40",
-                                "range": null,
-                                "title": "40 MHz",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "<choice ESP32_XTAL_FREQ_SEL>",
-                                "help": null,
-                                "id": "ESP32_XTAL_FREQ_26",
-                                "name": "ESP32_XTAL_FREQ_26",
-                                "range": null,
-                                "title": "26 MHz",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "<choice ESP32_XTAL_FREQ_SEL>",
-                                "help": null,
-                                "id": "ESP32_XTAL_FREQ_AUTO",
-                                "name": "ESP32_XTAL_FREQ_AUTO",
-                                "range": null,
-                                "title": "Autodetect",
-                                "type": "bool"
-                            }
-                        ],
-                        "depends_on": null,
-                        "help": "ESP32 currently supports the following XTAL frequencies:\n\n- 26 MHz\n- 40 MHz\n\nStartup code can automatically estimate XTAL frequency. This feature\nuses the internal 8MHz oscillator as a reference. Because the internal\noscillator frequency is temperature dependent, it is not recommended\nto use automatic XTAL frequency detection in applications which need\nto work at high ambient temperatures and use high-temperature\nqualified chips and modules.",
-                        "id": "component-config-hardware-settings-main-xtal-frequency",
-                        "name": "ESP32_XTAL_FREQ_SEL",
-                        "title": "Main XTAL frequency",
-                        "type": "choice"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": null,
-                        "id": "ESP32_XTAL_FREQ",
-                        "name": "ESP32_XTAL_FREQ",
-                        "range": null,
-                        "title": null,
-                        "type": "int"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
                                 "depends_on": "SOC_GDMA_SUPPORTED",
                                 "help": "Place GDMA control functions (like start/stop/append/reset) into IRAM,\nso that these functions can be IRAM-safe and able to be called in the other IRAM interrupt context.\nEnabling this option can improve driver performance as well.",
                                 "id": "GDMA_CTRL_FUNC_IN_IRAM",
@@ -12155,6 +12135,84 @@
                         "depends_on": "SOC_GDMA_SUPPORTED",
                         "id": "component-config-hardware-settings-gdma-configuration",
                         "title": "GDMA Configuration",
+                        "type": "menu"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "SOC_XTAL_SUPPORT_24M && <choice XTAL_FREQ_SEL>",
+                                        "help": null,
+                                        "id": "XTAL_FREQ_24",
+                                        "name": "XTAL_FREQ_24",
+                                        "range": null,
+                                        "title": "24 MHz",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "SOC_XTAL_SUPPORT_26M && <choice XTAL_FREQ_SEL>",
+                                        "help": null,
+                                        "id": "XTAL_FREQ_26",
+                                        "name": "XTAL_FREQ_26",
+                                        "range": null,
+                                        "title": "26 MHz",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "SOC_XTAL_SUPPORT_32M && <choice XTAL_FREQ_SEL>",
+                                        "help": null,
+                                        "id": "XTAL_FREQ_32",
+                                        "name": "XTAL_FREQ_32",
+                                        "range": null,
+                                        "title": "32 MHz",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "SOC_XTAL_SUPPORT_40M && <choice XTAL_FREQ_SEL>",
+                                        "help": null,
+                                        "id": "XTAL_FREQ_40",
+                                        "name": "XTAL_FREQ_40",
+                                        "range": null,
+                                        "title": "40 MHz",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "SOC_XTAL_SUPPORT_AUTO_DETECT && <choice XTAL_FREQ_SEL>",
+                                        "help": null,
+                                        "id": "XTAL_FREQ_AUTO",
+                                        "name": "XTAL_FREQ_AUTO",
+                                        "range": null,
+                                        "title": "Autodetect",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": null,
+                                "help": "This option selects the operating frequency of the XTAL (crystal) clock used to drive the ESP target.\nThe selected value MUST reflect the frequency of the given hardware.\n\nNote: The XTAL_FREQ_AUTO option allows the ESP target to automatically estimating XTAL clock's\noperating frequency. However, this feature is only supported on the ESP32. The ESP32 uses the\ninternal 8MHZ as a reference when estimating. Due to the internal oscillator's frequency being\ntemperature dependent, usage of the XTAL_FREQ_AUTO is not recommended in applications that operate\nin high ambient temperatures or use high-temperature qualified chips and modules.",
+                                "id": "component-config-hardware-settings-main-xtal-config-main-xtal-frequency",
+                                "name": "XTAL_FREQ_SEL",
+                                "title": "Main XTAL frequency",
+                                "type": "choice"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": null,
+                                "id": "XTAL_FREQ",
+                                "name": "XTAL_FREQ",
+                                "range": null,
+                                "title": null,
+                                "type": "int"
+                            }
+                        ],
+                        "depends_on": null,
+                        "id": "component-config-hardware-settings-main-xtal-config",
+                        "title": "Main XTAL Config",
                         "type": "menu"
                     }
                 ],
@@ -16115,7 +16173,7 @@
                             {
                                 "children": [],
                                 "depends_on": null,
-                                "help": "When enabled, the functions related to snapshots, such as vTaskGetSnapshot or uxTaskGetSnapshotAll, are\ncompiled and linked. Task snapshots are primarily used by GDB Stub and Core dump.",
+                                "help": "When enabled, the functions related to snapshots, such as vTaskGetSnapshot or uxTaskGetSnapshotAll, are\ncompiled and linked. Task snapshots are used by Task Watchdog (TWDT), GDB Stub and Core dump.",
                                 "id": "FREERTOS_ENABLE_TASK_SNAPSHOT",
                                 "name": "FREERTOS_ENABLE_TASK_SNAPSHOT",
                                 "range": null,

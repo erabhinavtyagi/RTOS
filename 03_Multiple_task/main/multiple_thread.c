@@ -40,10 +40,10 @@ void ether_task(void *data)
     {
     vTaskSuspend(NULL);
     prio = uxTaskPriorityGet(ether_task_handle);
-    printf("Serial task:Started %d\n", prio);
+    printf("Ether task:Started %d\n", prio);
     vTaskDelay(1000 / portTICK_PERIOD_MS);   
     }
-    vTaskDelete(serial_task_handle);
+    vTaskDelete(ether_task_handle);
 }
 
 int app_main()
@@ -51,8 +51,7 @@ int app_main()
     BaseType_t res;
     UBaseType_t mt_prio;
     
-    
-    printf("DESD RTOS pROJECT\n");
+    printf("DESD RTOS PROJECT\n");
     mt_prio = uxTaskPriorityGet(NULL);
     printf("Task created successfully:Prio:%d\n", mt_prio);
     res = xTaskCreate(serial_task, "SERIALTASK", 2048, NULL,5, &serial_task_handle);

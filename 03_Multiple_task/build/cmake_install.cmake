@@ -1,4 +1,4 @@
-# Install script for directory: /home/cdac/esp/esp-idf/examples/get-started/Multiple_task
+# Install script for directory: /home/abhinav/cdac/RTOS/03_Multiple_task
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,14 +32,9 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "TRUE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/cdac/.espressif/tools/xtensa-esp32-elf/esp-2022r1-RC1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump")
-endif()
-
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/cdac/esp/esp-idf/examples/get-started/Multiple_task/build/esp-idf/cmake_install.cmake")
+  include("/home/abhinav/cdac/RTOS/03_Multiple_task/build/esp-idf/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cdac/esp/esp-idf/examples/get-started/Multiple_task/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/abhinav/cdac/RTOS/03_Multiple_task/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

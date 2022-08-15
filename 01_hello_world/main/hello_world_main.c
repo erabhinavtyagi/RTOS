@@ -8,6 +8,11 @@
  * 5.idf.py monitor 
  */
 
+// output for my ESP32 is as follows.  
+// Hello world!
+// This is esp32 chip with 2 CPU core(s), WiFi/BT/BLE, silicon revision 100, 2MB external flash
+
+
 #include <stdio.h>
 #include "sdkconfig.h"
 #include "freertos/FreeRTOS.h"
@@ -35,10 +40,10 @@ void app_main(void)
         return;
     }
 
-    printf("%uMB %s flash\n", flash_size / (1024 * 1024),
+    printf("%luMB %s flash\n", flash_size / (1024 * 1024),
            (chip_info.features & CHIP_FEATURE_EMB_FLASH) ? "embedded" : "external");
 
-    printf("Minimum free heap size: %d bytes\n", esp_get_minimum_free_heap_size());
+    printf("Minimum free heap size: %ld bytes\n", esp_get_minimum_free_heap_size());
 
     for (int i = 10; i >= 0; i--) {
         printf("Restarting in %d seconds...\n", i);

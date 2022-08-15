@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles/bootloader"
+			"file" : "/home/abhinav/cdac/RTOS/01_hello_world/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles/bootloader.rule"
+			"file" : "/home/abhinav/cdac/RTOS/01_hello_world/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "/home/abhinav/cdac/RTOS/01_hello_world/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "/home/abhinav/cdac/RTOS/01_hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "/home/abhinav/cdac/RTOS/01_hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "/home/abhinav/cdac/RTOS/01_hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "/home/abhinav/cdac/RTOS/01_hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		},
 		{
-			"file" : "/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "/home/abhinav/cdac/RTOS/01_hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "/home/abhinav/cdac/RTOS/01_hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "/home/cdac/esp/esp-idf/examples/get-started/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "/home/abhinav/cdac/RTOS/01_hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		}
 	],
 	"target" : 

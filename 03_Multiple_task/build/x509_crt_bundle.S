@@ -1,4 +1,4 @@
-/* * Data converted from /home/cdac/esp/esp-idf/examples/get-started/Multiple_task/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/abhinav/cdac/RTOS/03_Multiple_task/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

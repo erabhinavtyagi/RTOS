@@ -1,6 +1,16 @@
+# Real Time Operating System
+
+- Here in this course we are using FreeRTOS and ESP32.
+
+- What is Port of the RTOS.
+
+  - FreeRTOS runs on many many architectures, and can be built with many different compilers. 
+  - A ‘port’ is considered to be a compiler/architecture combination.  
+  - For example, if you are targeting a Cortex-M0 MCU using the IAR compiler, then you are using the Cortex-M0 IAR port.
+
 - Porting of RTOS/ EOS
 
-  - Proceesor Independent
+  - Processor Independent
   - Processor Dependent
     - Timer => Clock Tick
     - Context Saving and Context Restoring
