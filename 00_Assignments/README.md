@@ -1,7 +1,7 @@
 # RTOS Assignment 
 NOTE: All Solutions are given by taking FREERTOS into account. Solutions may vary as per other Real-Time Operating System.
 
-## 1. Find what is the task priority numbering for the RTOS you are using. eg. Higher the number higher the priority or vice-versa. Find the range of priority that can be assigned to a task for your RTOS.
+### 1. Find what is the task priority numbering for the RTOS you are using. eg. Higher the number higher the priority or vice-versa. Find the range of priority that can be assigned to a task for your RTOS.
 
 Each task is assigned a priority from 0 to ( configMAX_PRIORITIES - 1 ), where configMAX_PRIORITIES is defined within FreeRTOSConfig.h.
 If the port in use implements a port optimised task selection mechanism that uses a 'count leading zeros' type instruction (for task selection in a single instruction) and configUSE_PORT_OPTIMISED_TASK_SELECTION is set to 1 in FreeRTOSConfig.h, then configMAX_PRIORITIES cannot be higher than 32. In all other cases configMAX_PRIORITIES can take any value within reason - but for reasons of RAM usage efficiency should be kept to the minimum value actually necessary.
@@ -10,7 +10,7 @@ The FreeRTOS scheduler ensures that tasks in the Ready or Running state will a
 Any number of tasks can share the same priority. If configUSE_TIME_SLICING is not defined, or if configUSE_TIME_SLICING is set to 1, then Ready state tasks of equal priority will share the available processing time using a time sliced round robin scheduling scheme.
 
 
-## 2. What is the mechanism used to make a task periodic for the RTOS you are using? Write a program to make a task periodic with periodicity of 500ms.
+### 2. What is the mechanism used to make a task periodic for the RTOS you are using? Write a program to make a task periodic with periodicity of 500ms.
 
 In FreeRTOS, there are two APIs to create delay or make the task periodic.
  
@@ -34,7 +34,7 @@ For eg.
  if the periodic execution is halted for any reason (for example, the task is temporarily placed into the Suspended state) causing the task to miss one or more periodic executions. 
 
 
-## 3. Find the APIs in your RTOS that provides timestamp and use it to print the periodic task. Observe the jitter in the timestamp vs the periodicity. Enhance the code to 10 periodic tasks with different periodicity. Futher observe the jitter in each of the task.
+### 3. Find the APIs in your RTOS that provides timestamp and use it to print the periodic task. Observe the jitter in the timestamp vs the periodicity. Enhance the code to 10 periodic tasks with different periodicity. Futher observe the jitter in each of the task.
 
 
 
@@ -187,6 +187,30 @@ If configGENERATE_RUN_TIME_STATS is defined as 1 then the RTOS kernel will autom
 
 2. portGET_RUN_TIME_COUNTER_VALUE()
 This macro should just return the current 'time', as configured by portCONFIGURE_TIMER_FOR_RUN_TIME_STATS().
+
+OUTPUT for given program code:
+
+![Output](https://drive.google.com/file/d/1QDiz6JwNK9K60BQLZSxVoHY5g11mM4bL/view?usp=sharing)
+
+This is the Main Task
+Task created successfully:Prio:1
+
+*************************************
+
+This is the First Task
+
+First Task     	0		<1%
+main           	0		<1%
+IDLE           	8613	20%
+IDLE           	0		<1%
+esp_timer      	23		<1%
+ipc1           	32249	77%
+ipc0           	27230	65%
+
+Task1 Priority: 3
+
+This is the First Task
+Task1 Priority: 3
 
 
 ## 14. Find the tick frequency configuration for your RTOS.

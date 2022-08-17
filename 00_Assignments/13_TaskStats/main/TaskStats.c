@@ -50,8 +50,8 @@ static char cBuffer[ BUFFER_SIZE ];
 /* Pass the buffer into vTaskGetRunTimeStats() to generate the table of data. */
 vTaskGetRunTimeStats( cBuffer );
 /* The generated information can be saved or viewed here. */
+printf("%s\n", cBuffer);
 }
-
 
 void task_1(void *data)
 {
