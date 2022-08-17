@@ -36,22 +36,22 @@ For eg.
 
 ### 3. Find the APIs in your RTOS that provides timestamp and use it to print the periodic task. Observe the jitter in the timestamp vs the periodicity. Enhance the code to 10 periodic tasks with different periodicity. Futher observe the jitter in each of the task.
 
+(working on it)
 
-
-## 4. Create two task with priority 10 and 20. Each task prints its own custom message.
+### 4. Create two task with priority 10 and 20. Each task prints its own custom message.
 
 Refer Program code.
 
-## 5. Swap the priority and observe the changes in the output. What is your conclusion on the sequence of printing the messages.
+### 5. Swap the priority and observe the changes in the output. What is your conclusion on the sequence of printing the messages.
 
 Refer Program code.
 CONCLUSION : Higher Priority Task started first in each case.
 
-## 6. What are the maximum number of tasks that can be created on the RTOS you are using? Is it limited by the RTOS design or underlying hardware resources or both.
+### 6. What are the maximum number of tasks that can be created on the RTOS you are using? Is it limited by the RTOS design or underlying hardware resources or both.
 
 The task control block (TCB) and the task's stack space are both allocated from the FreeRTOS heap as defined by configTOTAL_HEAP_SIZE (and the specific heapX.c file included in the build). There is nothing in FreeRTOS that limits the number of created tasks except the available FreeRTOS heap space.
 
-## 7. What is the scheduling algorithm used by your RTOS?
+### 7. What is the scheduling algorithm used by your RTOS?
 
 FreeRTOS kernel supports two types of scheduling policy:
 
@@ -62,7 +62,7 @@ FreeRTOS kernel supports two types of scheduling policy:
 But in FreeRTOS, we usually use scheduling policy by mixing both the above-mentioned algorithms and it is known as Prioritized Preemptive Scheduling with Time Slicing.
 
 
-## 8. List the customization options for creating a task for the RTOS you are using. eg. priority etc.
+### 8. List the customization options for creating a task for the RTOS you are using. eg. priority etc.
 
 FreeRTOS is customised using a configuration file called FreeRTOSConfig.h.
 
@@ -78,32 +78,32 @@ FreeRTOS is customised using a configuration file called FreeRTOSConfig.h.
 check FreeRTOSConfig.h for more options.
 
 
-## 9. Find the fields that are maintained in the Task Control Block / Process Control Block of the RTOS you are using.
+### 9. Find the fields that are maintained in the Task Control Block / Process Control Block of the RTOS you are using.
 
 FreeRTOS uses a newly allocated TCB object to store the name, priority, and other details for a task, then allocates the amount of stack the user requests (assuming there's enough memory available) and remembers the start of the stack memory in TCB's pxStack member. 
 
 
-## 10. Draw a process or task state diagram for the RTOS you are using.
+### 10. Draw a process or task state diagram for the RTOS you are using.
 
 A task can exist in one of the following states:
 
-### 1. Running
+#### 1. Running
 When a task is actually executing it is said to be in the Running state. It is currently utilising the processor. If the processor on which the RTOS is running only has a single core then there can only be one task in the Running state at any given time.
 
-### 2. Ready
+#### 2. Ready
 Ready tasks are those that are able to execute (they are not in the Blocked or Suspended state) but are not currently executing because a different task of equal or higher priority is already in the Running state.
 
-### 3. Blocked
+#### 3. Blocked
 A task is said to be in the Blocked state if it is currently waiting for either a temporal or external event. For example, if a task calls vTaskDelay() it will block (be placed into the Blocked state) until the delay period has expired - a temporal event. Tasks can also block to wait for queue, semaphore, event group, notification or semaphore event. Tasks in the Blocked state normally have a 'timeout' period, after which the task will be timeout, and be unblocked, even if the event the task was waiting for has not occurred.
 
 Tasks in the Blocked state do not use any processing time and cannot be selected to enter the Running state.
 
-### 4. Suspended
+#### 4. Suspended
 Like tasks that are in the Blocked state, tasks in the Suspended state cannot be selected to enter the Running state, but tasks in the Suspended state do not have a time out. Instead, tasks only enter or exit the Suspended state when explicitly commanded to do so through the vTaskSuspend() and xTaskResume() API calls respectively.
 
 ![Valid task state transitions](https://www.freertos.org/fr-content-src/uploads/2018/07/tskstate.gif)
 
-## 11. What is the API for deleting a task? Write a program demonstrate this capability.
+### 11. What is the API for deleting a task? Write a program demonstrate this capability.
 
 ```
 void vTaskDelete( TaskHandle_t pxTask ); 
@@ -118,7 +118,7 @@ Therefore, if an application makes use of the vTaskDelete() API function, it is 
 the application also ensures the idle task is not starved of processing time (the idle task must be allocated time in the Running state).
 
 
-## 12. What are the APIs provided by your RTOS for enabling and disabling the interrupts? Write a program to demonstrate this capability?
+### 12. What are the APIs provided by your RTOS for enabling and disabling the interrupts? Write a program to demonstrate this capability?
 
 **taskDISABLE_INTERRUPTS()**
 
@@ -159,7 +159,7 @@ FreeRTOS API functions must not be called from within a critical section.
 taskENTER_CRITICAL() and taskEXIT_CRITICAL() must not be called from an interrupt service routine (ISR) - see taskENTER_CRITICAL_FROM_ISR() and taskEXIT_CRITICAL_FROM_ISR() for interrupt safe equivalents.
 
 
-## 13. Does your RTOS provide APIs to collect task statistics. If yes, list the statistics parameters that are collected and write a program to display the runtime task statistics?
+### 13. Does your RTOS provide APIs to collect task statistics. If yes, list the statistics parameters that are collected and write a program to display the runtime task statistics?
 
 FreeRTOS provide following API for Runtime Task Statistics.
 ```
@@ -190,53 +190,38 @@ This macro should just return the current 'time', as configured by portCONFIGURE
 
 OUTPUT for given program code:
 
-![Output](https://drive.google.com/file/d/1QDiz6JwNK9K60BQLZSxVoHY5g11mM4bL/view?usp=sharing)
-
-This is the Main Task
-Task created successfully:Prio:1
-
-*************************************
-
-This is the First Task
-
-First Task     	0		<1%
-main           	0		<1%
-IDLE           	8613	20%
-IDLE           	0		<1%
-esp_timer      	23		<1%
-ipc1           	32249	77%
-ipc0           	27230	65%
-
-Task1 Priority: 3
-
-This is the First Task
-Task1 Priority: 3
+[TO CHECK OUTPUT Click Here!](https://drive.google.com/file/d/1QDiz6JwNK9K60BQLZSxVoHY5g11mM4bL/view)
 
 
-## 14. Find the tick frequency configuration for your RTOS.
+### 14. Find the tick frequency configuration for your RTOS.
 
 In my PC, the value of Tick Frequency in the file **FreeRTOSConfig.h** is given as **1000**. It may vary for other systems.
 
-## 15. Create a task to suspend itself after 1200 ms and resume it from another task.
+### 15. Create a task to suspend itself after 1200 ms and resume it from another task.
 
 Refer Program code.
 
-## 16. Write a RTOS application to demonstrate the use of changing priority.
+### 16. Write a RTOS application to demonstrate the use of changing priority.
 
+(working on it)
 
-## 17. If your RTOS supports idle task hooking, write a program to demonstrate it.
+### 17. If your RTOS supports idle task hooking, write a program to demonstrate it.
 
+(working on it)
 
-## 18. Write a RTOS application to demonstrate the use of task to task communication using Queue management APIs. Also demonstrate blocking on a queue.
+### 18. Write a RTOS application to demonstrate the use of task to task communication using Queue management APIs. Also demonstrate blocking on a queue.
 
+(working on it)
 
-## 19. Write a RTOS application to demonstrate the effects of task priorities when sending to and receiving from a queue.
+### 19. Write a RTOS application to demonstrate the effects of task priorities when sending to and receiving from a queue.
 
+(working on it)
 
-## 20. Write a RTOS application to demonstrate deferred interrupt processing using binary semaphores.
+### 20. Write a RTOS application to demonstrate deferred interrupt processing using binary semaphores.
 
+(working on it)
 
-## 21. Write a RTOS application to demonstrate counting semaphores to synchronize a task.
+### 21. Write a RTOS application to demonstrate counting semaphores to synchronize a task.
 
 Refer Program code.
 
@@ -265,13 +250,18 @@ Parameters:
 Returns:
 If the semaphore is created successfully then a handle to the semaphore is returned. If the semaphore cannot be created because the RAM required to hold the semaphore cannot be allocated then NULL is returned.
 
-## 22. Write a RTOS application to demonstrate the usage of queues within an interrupt service routine.
+### 22. Write a RTOS application to demonstrate the usage of queues within an interrupt service routine.
 
+(working on it)
 
-## 23. Write a RTOS application to manage resources using mutual exclusion.
+### 23. Write a RTOS application to manage resources using mutual exclusion.
 
+(working on it)
 
-## 24. Write a RTOS application to demonstrate a priority inversion problem. If your RTOS supports priority inheritance or priority ceiling, use it to solve the priority inversion problem.
+### 24. Write a RTOS application to demonstrate a priority inversion problem. If your RTOS supports priority inheritance or priority ceiling, use it to solve the priority inversion problem.
 
+(working on it)
 
-## 25. Write a RTOS application to create a software timer that invokes a callback function every 5 seconds.
+### 25. Write a RTOS application to create a software timer that invokes a callback function every 5 seconds.
+
+(working on it)

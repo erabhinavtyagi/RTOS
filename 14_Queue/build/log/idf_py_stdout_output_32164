@@ -1,0 +1,289 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7012
+load:0x40078000,len:15384
+load:0x40080400,len:3816
+entry 0x40080648
+[0;32mI (27) boot: ESP-IDF v5.1-dev-96-gafc6fba7f5 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time 03:25:12[0m
+[0;32mI (27) boot: chip revision: V100[0m
+[0;32mI (32) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (102) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=07a94h ( 31380) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=00017abc vaddr=3ffb0000 size=028b4h ( 10420) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001a378 vaddr=40080000 size=05ca0h ( 23712) load[0m
+[0;32mI (140) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=156c8h ( 87752) map[0m
+[0;32mI (172) esp_image: segment 4: paddr=000356f0 vaddr=40085ca0 size=05bf4h ( 23540) load[0m
+[0;32mI (182) esp_image: segment 5: paddr=0003b2ec vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (188) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (188) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x40081070[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (217) cpu_start: Pro cpu start user code[0m
+[0;32mI (217) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (217) cpu_start: Application information:[0m
+[0;32mI (222) cpu_start: Project name:     14_Queue[0m
+[0;32mI (227) cpu_start: App version:      75011fc7-dirty[0m
+[0;32mI (232) cpu_start: Compile time:     Aug 18 2022 03:25:01[0m
+[0;32mI (238) cpu_start: ELF file SHA256:  5ddfab4078b89f28...[0m
+[0;32mI (244) cpu_start: ESP-IDF:          v5.1-dev-96-gafc6fba7f5[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB31B0 len 0002CE50 (179 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008B894 len 0001476C (81 KiB): IRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (298) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (312) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+DESD RTOS PROJECT
+MT: Task created successfully: prio : 1
+temperature_Task2: Starting the Temperature Task 
+pressure_Task1: Starting the Pressure Task 
+processing_Task3: Starting the Processing Task 
+Highprio_Task4: Starting the High Priority Task 
+High Priority Task Received Data: 101
+Processing Task Received Data: 201
+High Priority Task Received Data: 102
+High Priority Task Received Data: 103
+High Priority Task Received Data: 104
+High Priority Task Received Data: 105
+High Priority Task Received Data: 202
+High Priority Task Received Data: 106
+High Priority Task Received Data: 107
+High Priority Task Received Data: 108
+High Priority Task Received Data: 109
+High Priority Task Received Data: 110
+High Priority Task Received Data: 203
+High Priority Task Received Data: 111
+High Priority Task Received Data: 112
+High Priority Task Received Data: 113
+High Priority Task Received Data: 114
+High Priority Task Received Data: 115
+High Priority Task Received Data: 204
+High Priority Task Received Data: 116
+High Priority Task Received Data: 117
+High Priority Task Received Data: 118
+High Priority Task Received Data: 119
+High Priority Task Received Data: 120
+High Priority Task Received Data: 205
+High Priority Task Received Data: 121
+High Priority Task Received Data: 122
+High Priority Task Received Data: 123
+High Priority Task Received Data: 124
+High Priority Task Received Data: 125
+High Priority Task Received Data: 206
+High Priority Task Received Data: 126
+High Priority Task Received Data: 127
+High Priority Task Received Data: 128
+High Priority Task Received Data: 129
+High Priority Task Received Data: 130
+High Priority Task Received Data: 207
+High Priority Task Received Data: 131
+High Priority Task Received Data: 132
+High Priority Task Received Data: 133
+High Priority Task Received Data: 134
+High Priority Task Received Data: 135
+High Priority Task Received Data: 208
+High Priority Task Received Data: 136
+High Priority Task Received Data: 137
+High Priority Task Received Data: 138
+High Priority Task Received Data: 139
+High Priority Task Received Data: 140
+High Priority Task Received Data: 209
+High Priority Task Received Data: 141
+High Priority Task Received Data: 142
+High Priority Task Received Data: 143
+Processing Task Received Data: 144
+Processing Task Received Data: 145
+Processing Task Received Data: 210
+Processing Task Received Data: 146
+Processing Task Received Data: 147
+Processing Task Received Data: 148
+Processing Task Received Data: 149
+Processing Task Received Data: 150
+Processing Task Received Data: 211
+Processing Task Received Data: 151
+Processing Task Received Data: 152
+Processing Task Received Data: 153
+Processing Task Received Data: 154
+Processing Task Received Data: 155
+Processing Task Received Data: 212
+Processing Task Received Data: 156
+Processing Task Received Data: 157
+Processing Task Received Data: 158
+Processing Task Received Data: 159
+Processing Task Received Data: 160
+Processing Task Received Data: 213
+Processing Task Received Data: 161
+Processing Task Received Data: 162
+Processing Task Received Data: 163
+Processing Task Received Data: 164
+Processing Task Received Data: 165
+Processing Task Received Data: 214
+Processing Task Received Data: 166
+Processing Task Received Data: 167
+Processing Task Received Data: 168
+Processing Task Received Data: 169
+Processing Task Received Data: 170
+Processing Task Received Data: 215
+Processing Task Received Data: 171
+Processing Task Received Data: 172
+Processing Task Received Data: 173
+Processing Task Received Data: 174
+Processing Task Received Data: 175
+Processing Task Received Data: 216
+Processing Task Received Data: 176
+Processing Task Received Data: 177
+Processing Task Received Data: 178
+Processing Task Received Data: 179
+Processing Task Received Data: 180
+Processing Task Received Data: 217
+Processing Task Received Data: 181
+Processing Task Received Data: 182
+Processing Task Received Data: 183
+Processing Task Received Data: 184
+Processing Task Received Data: 185
+Processing Task Received Data: 218
+Processing Task Received Data: 186
+Processing Task Received Data: 187
+Processing Task Received Data: 188
+Processing Task Received Data: 189
+Processing Task Received Data: 190
+Processing Task Received Data: 219
+Processing Task Received Data: 191
+Processing Task Received Data: 192
+Processing Task Received Data: 193
+Processing Task Received Data: 194
+Processing Task Received Data: 195
+Processing Task Received Data: 220
+Processing Task Received Data: 196
+Processing Task Received Data: 197
+Processing Task Received Data: 198
+Processing Task Received Data: 199
+Processing Task Received Data: 200
+Processing Task Received Data: 221
+Processing Task Received Data: 201
+Processing Task Received Data: 202
+Processing Task Received Data: 203
+Processing Task Received Data: 204
+Processing Task Received Data: 205
+Processing Task Received Data: 222
+Processing Task Received Data: 206
+Processing Task Received Data: 207
+Processing Task Received Data: 208
+Processing Task Received Data: 209
+Processing Task Received Data: 210
+Processing Task Received Data: 223
+Processing Task Received Data: 211
+Processing Task Received Data: 212
+Processing Task Received Data: 213
+Processing Task Received Data: 214
+Processing Task Received Data: 215
+Processing Task Received Data: 224
+Processing Task Received Data: 216
+Processing Task Received Data: 217
+Processing Task Received Data: 218
+Processing Task Received Data: 219
+Processing Task Received Data: 220
+Processing Task Received Data: 225
+Processing Task Received Data: 221
+Processing Task Received Data: 222
+Processing Task Received Data: 223
+Processing Task Received Data: 224
+Processing Task Received Data: 225
+Processing Task Received Data: 226
+Processing Task Received Data: 226
+Processing Task Received Data: 227
+Processing Task Received Data: 228
+Processing Task Received Data: 229
+Processing Task Received Data: 230
+Processing Task Received Data: 227
+Processing Task Received Data: 231
+Processing Task Received Data: 232
+Processing Task Received Data: 233
+Processing Task Received Data: 234
+Processing Task Received Data: 235
+Processing Task Received Data: 228
+Processing Task Received Data: 236
+Processing Task Received Data: 237
+Processing Task Received Data: 238
+Processing Task Received Data: 239
+Processing Task Received Data: 240
+Processing Task Received Data: 229
+Processing Task Received Data: 241
+Processing Task Received Data: 242
+High Priority Task Received Data: 243
+Processing Task Received Data: 244
+Processing Task Received Data: 245
+Processing Task Received Data: 230
+Processing Task Received Data: 246
+Processing Task Received Data: 247
+Processing Task Received Data: 248
+Processing Task Received Data: 249
+Processing Task Received Data: 250
+Processing Task Received Data: 231
+Processing Task Received Data: 251
+Processing Task Received Data: 252
+Processing Task Received Data: 253
+Processing Task Received Data: 254
+Processing Task Received Data: 255
+Processing Task Received Data: 232
+Processing Task Received Data: 256
+Processing Task Received Data: 257
+Processing Task Received Data: 258
+Processing Task Received Data: 259
+Processing Task Received Data: 260
+Processing Task Received Data: 233
+Processing Task Received Data: 261
+Processing Task Received Data: 262
+Processing Task Received Data: 263
+Processing Task Received Data: 264
+Processing Task Received Data: 265
+Processing Task Received Data: 234
+Processing Task Received Data: 266
+Processing Task Received Data: 267
+Processing Task Received Data: 268
+Processing Task Received Data: 269
+Processing Task Received Data: 270
+Processing Task Received Data: 235
+Processing Task Received Data: 271
+Processing Task Received Data: 272
+Processing Task Received Data: 273
+Processing Task Received Data: 274
+Processing Task Received Data: 275
+Processing Task Received Data: 236
+Processing Task Received Data: 276
+Processing Task Received Data: 277
+Processing Task Received Data: 278
+Processing Task Received Data: 279
+Processing Task Received Data: 280
+Processing Task Received Data: 237
+Processing Task Received Data: 281
+Processing Task Received Data: 282
+Processing Task Received Data: 283
+Processing Task Received Data: 284
+Processing Task Received Data: 285
+Processing Task Received Data: 238
+Processing Task Received Data: 286
