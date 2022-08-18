@@ -1,0 +1,133 @@
+[0;33m--- idf_monitor on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400810a8: call_start_cpu1 at /home/abhinav/esp/esp-idf/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x40081b26: panic_abort at /home/abhinav/esp/esp-idf/components/esp_system/panic.c:412
+[0m
+[0;33m0x40085659: esp_system_abort at /home/abhinav/esp/esp-idf/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4008a7a9: __assert_func at /home/abhinav/esp/esp-idf/components/newlib/assert.c:78
+[0m
+[0;33m0x40087f2a: xEventGroupWaitBits at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:378 (discriminator 1)
+[0m
+[0;33m0x400d5190: processing_task3 at /home/abhinav/cdac/RTOS/15_EventFlags/build/../main/EventFlag.c:58 (discriminator 1)
+[0m
+[0;33m0x40088199: vPortTaskWrapper at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400810a8: call_start_cpu1 at /home/abhinav/esp/esp-idf/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x40081b26: panic_abort at /home/abhinav/esp/esp-idf/components/esp_system/panic.c:412
+[0m
+[0;33m0x40085659: esp_system_abort at /home/abhinav/esp/esp-idf/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4008a7a9: __assert_func at /home/abhinav/esp/esp-idf/components/newlib/assert.c:78
+[0m
+[0;33m0x40087f2a: xEventGroupWaitBits at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:378 (discriminator 1)
+[0m
+[0;33m0x400d5190: processing_task3 at /home/abhinav/cdac/RTOS/15_EventFlags/build/../main/EventFlag.c:58 (discriminator 1)
+[0m
+[0;33m0x40088199: vPortTaskWrapper at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400810a8: call_start_cpu1 at /home/abhinav/esp/esp-idf/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x40081b26: panic_abort at /home/abhinav/esp/esp-idf/components/esp_system/panic.c:412
+[0m
+[0;33m0x40085659: esp_system_abort at /home/abhinav/esp/esp-idf/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4008a7a9: __assert_func at /home/abhinav/esp/esp-idf/components/newlib/assert.c:78
+[0m
+[0;33m0x40087f2a: xEventGroupWaitBits at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:378 (discriminator 1)
+[0m
+[0;33m0x400d5190: processing_task3 at /home/abhinav/cdac/RTOS/15_EventFlags/build/../main/EventFlag.c:58 (discriminator 1)
+[0m
+[0;33m0x40088199: vPortTaskWrapper at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400810a8: call_start_cpu1 at /home/abhinav/esp/esp-idf/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x40081b26: panic_abort at /home/abhinav/esp/esp-idf/components/esp_system/panic.c:412
+[0m
+[0;33m0x40085659: esp_system_abort at /home/abhinav/esp/esp-idf/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4008a7a9: __assert_func at /home/abhinav/esp/esp-idf/components/newlib/assert.c:78
+[0m
+[0;33m0x40087f2a: xEventGroupWaitBits at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:378 (discriminator 1)
+[0m
+[0;33m0x400d5190: processing_task3 at /home/abhinav/cdac/RTOS/15_EventFlags/build/../main/EventFlag.c:58 (discriminator 1)
+[0m
+[0;33m0x40088199: vPortTaskWrapper at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400810a8: call_start_cpu1 at /home/abhinav/esp/esp-idf/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x40081b26: panic_abort at /home/abhinav/esp/esp-idf/components/esp_system/panic.c:412
+[0m
+[0;33m0x40085659: esp_system_abort at /home/abhinav/esp/esp-idf/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4008a7a9: __assert_func at /home/abhinav/esp/esp-idf/components/newlib/assert.c:78
+[0m
+[0;33m0x40087f2a: xEventGroupWaitBits at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:378 (discriminator 1)
+[0m
+[0;33m0x400d5190: processing_task3 at /home/abhinav/cdac/RTOS/15_EventFlags/build/../main/EventFlag.c:58 (discriminator 1)
+[0m
+[0;33m0x40088199: vPortTaskWrapper at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400810a8: call_start_cpu1 at /home/abhinav/esp/esp-idf/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x40081b26: panic_abort at /home/abhinav/esp/esp-idf/components/esp_system/panic.c:412
+[0m
+[0;33m0x40085659: esp_system_abort at /home/abhinav/esp/esp-idf/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4008a7a9: __assert_func at /home/abhinav/esp/esp-idf/components/newlib/assert.c:78
+[0m
+[0;33m0x40087f2a: xEventGroupWaitBits at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:378 (discriminator 1)
+[0m
+[0;33m0x400d5190: processing_task3 at /home/abhinav/cdac/RTOS/15_EventFlags/build/../main/EventFlag.c:58 (discriminator 1)
+[0m
+[0;33m0x40088199: vPortTaskWrapper at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400810a8: call_start_cpu1 at /home/abhinav/esp/esp-idf/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x40081b26: panic_abort at /home/abhinav/esp/esp-idf/components/esp_system/panic.c:412
+[0m
+[0;33m0x40085659: esp_system_abort at /home/abhinav/esp/esp-idf/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4008a7a9: __assert_func at /home/abhinav/esp/esp-idf/components/newlib/assert.c:78
+[0m
+[0;33m0x40087f2a: xEventGroupWaitBits at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:378 (discriminator 1)
+[0m
+[0;33m0x400d5190: processing_task3 at /home/abhinav/cdac/RTOS/15_EventFlags/build/../main/EventFlag.c:58 (discriminator 1)
+[0m
+[0;33m0x40088199: vPortTaskWrapper at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400810a8: call_start_cpu1 at /home/abhinav/esp/esp-idf/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x40081b26: panic_abort at /home/abhinav/esp/esp-idf/components/esp_system/panic.c:412
+[0m
+[0;33m0x40085659: esp_system_abort at /home/abhinav/esp/esp-idf/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4008a7a9: __assert_func at /home/abhinav/esp/esp-idf/components/newlib/assert.c:78
+[0m
+[0;33m0x40087f2a: xEventGroupWaitBits at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:378 (discriminator 1)
+[0m
+[0;33m0x400d5190: processing_task3 at /home/abhinav/cdac/RTOS/15_EventFlags/build/../main/EventFlag.c:58 (discriminator 1)
+[0m
+[0;33m0x40088199: vPortTaskWrapper at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m
