@@ -1,0 +1,39 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/abhinav/cdac/RTOS/00_Assignments/24_PriorityInheritance/build/bootloader/esp-idf/esptool_py && /home/abhinav/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/abhinav/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/abhinav/cdac/RTOS/00_Assignments/24_PriorityInheritance/build/bootloader/bootloader.bin
+Bootloader binary size 0x66c0 bytes. 0x940 bytes (8%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/PriorityInheritance.c.obj
+../main/PriorityInheritance.c: In function 'LP_task':
+../main/PriorityInheritance.c:42:55: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+   42 |     printf((xTaskGetTickCount() * portTICK_PERIOD_MS) - timestamp);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+      |                                                       |
+      |                                                       long unsigned int
+In file included from ../main/PriorityInheritance.c:11:
+/home/abhinav/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/xtensa-esp32-elf/sys-include/stdio.h:200:17: note: expected 'const char * restrict' but argument is of type 'long unsigned int'
+  200 | int     printf (const char *__restrict, ...)
+      |                 ^
+../main/PriorityInheritance.c: In function 'HP_task':
+../main/PriorityInheritance.c:97:55: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+   97 |     printf((xTaskGetTickCount() * portTICK_PERIOD_MS) - timestamp);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+      |                                                       |
+      |                                                       long unsigned int
+In file included from ../main/PriorityInheritance.c:11:
+/home/abhinav/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/xtensa-esp32-elf/sys-include/stdio.h:200:17: note: expected 'const char * restrict' but argument is of type 'long unsigned int'
+  200 | int     printf (const char *__restrict, ...)
+      |                 ^
+../main/PriorityInheritance.c: In function 'app_main':
+../main/PriorityInheritance.c:118:16: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+  118 |     BaseType_t res;
+      |                ^~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable 24_PriorityInheritance.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.2.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/abhinav/cdac/RTOS/00_Assignments/24_PriorityInheritance/build/24_PriorityInheritance.bin
+[7/7] cd /home/abhinav/cdac/RTOS/00_Assignments/24_PriorityInheritance/build/esp-idf/esptool_py && /home/abhinav/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/abhinav/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/abhinav/cdac/RTOS/00_Assignments/24_PriorityInheritance/build/partition_table/partition-table.bin /home/abhinav/cdac/RTOS/00_Assignments/24_PriorityInheritance/build/24_PriorityInheritance.bin
+24_PriorityInheritance.bin binary size 0x2b1b0 bytes. Smallest app partition is 0x100000 bytes. 0xd4e50 bytes (83%) free.

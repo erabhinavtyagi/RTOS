@@ -1,0 +1,111 @@
+[0;33m--- idf_monitor on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081068: call_start_cpu1 at /home/abhinav/esp/esp-idf/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x400828c3: lock_acquire_generic at /home/abhinav/esp/esp-idf/components/newlib/locks.c:130
+[0m
+[0;33m0x40081ae6: panic_abort at /home/abhinav/esp/esp-idf/components/esp_system/panic.c:412
+[0m
+[0;33m0x40085619: esp_system_abort at /home/abhinav/esp/esp-idf/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4008a2e6: abort at /home/abhinav/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x400828c3: lock_acquire_generic at /home/abhinav/esp/esp-idf/components/newlib/locks.c:130
+[0m
+[0;33m0x40082a01: _lock_acquire_recursive at /home/abhinav/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x40082a7a: __retarget_lock_acquire_recursive at /home/abhinav/esp/esp-idf/components/newlib/locks.c:314
+[0m
+[0;33m0x400d78a2: _puts_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/puts.c:89 (discriminator 2)
+[0m
+[0;33m0x400d78e7: puts at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/puts.c:129
+[0m
+[0;33m0x400d51f8: HP_task at /home/abhinav/cdac/RTOS/00_Assignments/24_PriorityInheritance/build/../main/PriorityInheritance.c:103
+[0m
+[0;33m0x40087dd1: vPortTaskWrapper at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081068: call_start_cpu1 at /home/abhinav/esp/esp-idf/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x400828c3: lock_acquire_generic at /home/abhinav/esp/esp-idf/components/newlib/locks.c:130
+[0m
+[0;33m0x40081ae6: panic_abort at /home/abhinav/esp/esp-idf/components/esp_system/panic.c:412
+[0m
+[0;33m0x40085619: esp_system_abort at /home/abhinav/esp/esp-idf/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4008a2e6: abort at /home/abhinav/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x400828c3: lock_acquire_generic at /home/abhinav/esp/esp-idf/components/newlib/locks.c:130
+[0m
+[0;33m0x40082a01: _lock_acquire_recursive at /home/abhinav/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x40082a7a: __retarget_lock_acquire_recursive at /home/abhinav/esp/esp-idf/components/newlib/locks.c:314
+[0m
+[0;33m0x400d78a2: _puts_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/puts.c:89 (discriminator 2)
+[0m
+[0;33m0x400d78e7: puts at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/puts.c:129
+[0m
+[0;33m0x400d51f8: HP_task at /home/abhinav/cdac/RTOS/00_Assignments/24_PriorityInheritance/build/../main/PriorityInheritance.c:103
+[0m
+[0;33m0x40087dd1: vPortTaskWrapper at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081068: call_start_cpu1 at /home/abhinav/esp/esp-idf/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x400828c3: lock_acquire_generic at /home/abhinav/esp/esp-idf/components/newlib/locks.c:130
+[0m
+[0;33m0x40081ae6: panic_abort at /home/abhinav/esp/esp-idf/components/esp_system/panic.c:412
+[0m
+[0;33m0x40085619: esp_system_abort at /home/abhinav/esp/esp-idf/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4008a2e6: abort at /home/abhinav/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x400828c3: lock_acquire_generic at /home/abhinav/esp/esp-idf/components/newlib/locks.c:130
+[0m
+[0;33m0x40082a01: _lock_acquire_recursive at /home/abhinav/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x40082a7a: __retarget_lock_acquire_recursive at /home/abhinav/esp/esp-idf/components/newlib/locks.c:314
+[0m
+[0;33m0x400d78a2: _puts_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/puts.c:89 (discriminator 2)
+[0m
+[0;33m0x400d78e7: puts at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/puts.c:129
+[0m
+[0;33m0x400d51f8: HP_task at /home/abhinav/cdac/RTOS/00_Assignments/24_PriorityInheritance/build/../main/PriorityInheritance.c:103
+[0m
+[0;33m0x40087dd1: vPortTaskWrapper at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081068: call_start_cpu1 at /home/abhinav/esp/esp-idf/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x400828c3: lock_acquire_generic at /home/abhinav/esp/esp-idf/components/newlib/locks.c:130
+[0m
+[0;33m0x40081ae6: panic_abort at /home/abhinav/esp/esp-idf/components/esp_system/panic.c:412
+[0m
+[0;33m0x40085619: esp_system_abort at /home/abhinav/esp/esp-idf/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4008a2e6: abort at /home/abhinav/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x400828c3: lock_acquire_generic at /home/abhinav/esp/esp-idf/components/newlib/locks.c:130
+[0m
+[0;33m0x40082a01: _lock_acquire_recursive at /home/abhinav/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x40082a7a: __retarget_lock_acquire_recursive at /home/abhinav/esp/esp-idf/components/newlib/locks.c:314
+[0m
+[0;33m0x400d78a2: _puts_r at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/puts.c:89 (discriminator 2)
+[0m
+[0;33m0x400d78e7: puts at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/puts.c:129
+[0m
+[0;33m0x400d51f8: HP_task at /home/abhinav/cdac/RTOS/00_Assignments/24_PriorityInheritance/build/../main/PriorityInheritance.c:103
+[0m
+[0;33m0x40087dd1: vPortTaskWrapper at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081068: call_start_cpu1 at /home/abhinav/esp/esp-idf/components/esp_system/port/cpu_start.c:142
+[0m
+[0m

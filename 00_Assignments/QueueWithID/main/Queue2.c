@@ -1,10 +1,10 @@
 
 /*
- * Problem 4. Program for implementing Queue with Idenfication bit and message bit. 
+ * Problem 26. Program for implementing Queue with Idenfication bit and message bit. 
  * 
  * @ author	: Abhinav Tyagi
  * @ email 	: erabhinavtyagi@gmail.com
- * @ date	: Aug 15, 2021	
+ * @ date	: Aug 19, 2022	
  */
 
 #include <stdio.h>

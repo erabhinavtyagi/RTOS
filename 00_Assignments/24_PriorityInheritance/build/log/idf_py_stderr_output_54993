@@ -1,0 +1,35 @@
+[0;33m--- idf_monitor on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081068: call_start_cpu1 at /home/abhinav/esp/esp-idf/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x400db7a6: _vfprintf_r at ??:?
+[0m
+[0;33m0x400db7a3: _vfprintf_r at ??:?
+[0m
+[0;33m0x400d782d: printf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+[0m
+[0;33m0x400d5207: HP_task at /home/abhinav/cdac/RTOS/00_Assignments/24_PriorityInheritance/build/../main/PriorityInheritance.c:97
+[0m
+[0;33m0x40087dd1: vPortTaskWrapper at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081068: call_start_cpu1 at /home/abhinav/esp/esp-idf/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x400db7a6: _vfprintf_r at ??:?
+[0m
+[0;33m0x400db7a3: _vfprintf_r at ??:?
+[0m
+[0;33m0x400d782d: printf at /builds/idf/crosstool-NG/.build/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/printf.c:56 (discriminator 5)
+[0m
+[0;33m0x400d5207: HP_task at /home/abhinav/cdac/RTOS/00_Assignments/24_PriorityInheritance/build/../main/PriorityInheritance.c:97
+[0m
+[0;33m0x40087dd1: vPortTaskWrapper at /home/abhinav/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081068: call_start_cpu1 at /home/abhinav/esp/esp-idf/components/esp_system/port/cpu_start.c:142
+[0m
+[0m

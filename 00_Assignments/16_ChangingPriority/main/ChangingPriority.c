@@ -3,7 +3,7 @@
  * 
  * @ author	: Abhinav Tyagi
  * @ email 	: erabhinavtyagi@gmail.com
- * @ date	: Aug 15, 2021	
+ * @ date	: Aug 15, 2022	
  */
 
 
@@ -15,28 +15,33 @@ TaskHandle_t task1_handle, task2_handle;
 
 void task_1(void *data)
 {
-    int count = 0;
+    UBaseType_t prio;
     while (1)
     {
         printf("This is the First Task\n");
-        count += 1;
-        if (count > 5)
-        {
-            vTaskResume(task2_handle);
-            printf("Task 2 Resumed\n");
-            count = 0;
-        }
+
+        //Change priority to 2. Earlier it was 4.
+        vTaskPrioritySet(task1_handle, 2);
+        
+        prio = uxTaskPriorityGet(task1_handle);
+        printf("Task-1 prio : %d\n", prio);
+        
         vTaskDelay(500 / portTICK_PERIOD_MS);
     }
+    vTaskDelete(NULL);
 }
 
 void task_2(void *data)
 {
+    UBaseType_t prio;
     while (1)
     {
-        vTaskSuspend(task2_handle);
         printf("This is the Second Task\n");
+        prio = uxTaskPriorityGet(task2_handle);
+        printf("Task-2 prio : %d\n", prio);
+        vTaskDelay(500 / portTICK_PERIOD_MS);
     }
+    vTaskDelete(NULL);
 }
 
 void app_main()

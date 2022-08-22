@@ -38,6 +38,8 @@ For eg.
 
 (working on it)
 
+
+
 ### 4. Create two task with priority 10 and 20. Each task prints its own custom message.
 
 Refer Program code.
@@ -203,19 +205,47 @@ Refer Program code.
 
 ### 16. Write a RTOS application to demonstrate the use of changing priority.
 
-(working on it)
+Refer Program code.
+
+In Program, I have changed the Priority of Task-1 from 4 to 2. 
 
 ### 17. If your RTOS supports idle task hooking, write a program to demonstrate it.
 
-(working on it)
+(WORKING ON IT)
+
+An idle task hook is a function that is called during each cycle of the idle task. If you want application functionality to run at the idle priority then there are two options:
+
+1. Implement the functionality in an idle task hook.
+    There must always be at least one task that is ready to run. It is therefore imperative that the hook function does not call any API functions that might cause the idle task to block (vTaskDelay(), or a queue or semaphore function with a block time, for example). It is ok for co-routines to block within the hook function.
+
+2. Create an idle priority task to implement the functionality.
+    This is a more flexible solution but has a higher RAM usage overhead.
+
+See the Embedded software application design section in freeRTOS reference manual for more information on using an idle hook.
+
+To create an idle hook:
+
+1. Set configUSE_IDLE_HOOK to 1 in FreeRTOSConfig.h.
+2. Define a function that has the following name and prototype:
+    ```
+    void vApplicationIdleHook( void );
+    ```
+
+It is common to use the idle hook function to place the microcontroller CPU into a power saving mode.
+
+[check this page](https://www.freertos.org/RTOS-idle-task.html)
 
 ### 18. Write a RTOS application to demonstrate the use of task to task communication using Queue management APIs. Also demonstrate blocking on a queue.
 
-(working on it)
+Queue sets are a FreeRTOS feature that enables an RTOS task to block (pend) when receiving from multiple queues and/or semaphores at the same time. Queues and semaphores are grouped into sets, then, instead of blocking on an individual queue or semaphore, a task instead blocks on the set.
+
+[Check this link](https://www.freertos.org/Pend-on-multiple-rtos-objects.html)
 
 ### 19. Write a RTOS application to demonstrate the effects of task priorities when sending to and receiving from a queue.
 
-(working on it)
+Data has been sent to the queue in the order of priority of the task. 
+i.e Task with higher Priority is sent first to the queue and then the lower ones in decreasing 
+order of priorities.
 
 ### 20. Write a RTOS application to demonstrate deferred interrupt processing using binary semaphores.
 
@@ -264,4 +294,14 @@ If the semaphore is created successfully then a handle to the semaphore is retur
 
 ### 25. Write a RTOS application to create a software timer that invokes a callback function every 5 seconds.
 
-(working on it)
+Refer Program Code.
+
+API USED :
+```
+TimerHandle_t xTimerCreate
+                 ( const char * const pcTimerName,
+                   const TickType_t xTimerPeriod,
+                   const UBaseType_t uxAutoReload,
+                   void * const pvTimerID,
+                   TimerCallbackFunction_t pxCallbackFunction );
+```
